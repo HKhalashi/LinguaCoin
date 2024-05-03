@@ -9,7 +9,7 @@ class LinguaChainNode:
         self.blockchain = blockchain
         self.data_store = []  # Local storage for data units
         self.model = None  # Placeholder for the LLaMA 3 model instance
-        self.stake = 100  # Example stake, could be dynamic or based on other factors
+        self.stake = 100  
 
     def load_data(self, data):
         """ Load data into the node's local storage """
@@ -24,7 +24,7 @@ class LinguaChainNode:
 
     def create_learning_unit(self):
         """ Create a learning unit from the trained model to submit to the blockchain """
-        model_state = self.model  # This should include serialization of the model state if needed
+        model_state = self.model  
         learning_unit = {
             "timestamp": str(datetime.now()),
             "model_state": model_state,
